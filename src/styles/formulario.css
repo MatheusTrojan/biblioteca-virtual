@@ -1,0 +1,31 @@
+.container {
+    text-align: center;
+}
+
+.formulario__titulo {
+    font-size: 1.5em;
+    margin: 2rem;
+}
+
+.formulario__cliente {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 40%;
+}
+
+.formulario__label {
+    align-self: flex-start;
+}
+
+.formulario__input {
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    width: 100%
+}
+
+.btn-cadastro {
+    margin: 1rem;
+    padding: 0.5rem;
+}
