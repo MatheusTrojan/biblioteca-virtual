@@ -1,0 +1,23 @@
+.livro__resultado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr
+}
+
+.livro__infos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.livro__titulo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.livro__autor {
+    font-size: 1.15rem;
+}
+
+.livro__imagem {
+    width: 300px;
+}
