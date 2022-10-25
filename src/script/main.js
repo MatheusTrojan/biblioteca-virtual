@@ -24,14 +24,13 @@ async function pesquisaLivro() {
             imagem = resultadoBusca.items[i].volumeInfo.imageLinks.thumbnail
             url = resultadoBusca.items[i].volumeInfo.infoLink
 
-            livro += "<div class='livro__infos'><h3 class='livro__titulo'>" + titulo + "</h3>"
+            livro += "<div class='livro__card'><h3 class='livro__titulo'>" + titulo + "</h3>"
             livro += "<h4 class='livro__autor'>" + autor + "</h4>"
             livro += "<img class='livro__imagem' src=" + imagem + ">"
             livro += "<a href='" + url + "'><button class='livro__saiba-mais'>Saiba Mais</button></a>"
-            livro += "<button class='btn-favoritar' id='btn-favoritar'>Favoritar</button></div>"
+            livro += "<button class='btn-favoritar' id='btn-favoritar' onclick='favoritarLivro()'>Favoritar</button></div>"
 
             livros.push(livro)
-            console.log(imagem)
 
         }
         nomeLivro.value = ""

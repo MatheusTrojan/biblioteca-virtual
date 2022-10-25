@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr
 }
 
-.livro__infos {
+.livro__card {
     align-items: center;
     display: flex;
     flex-direction: column;
