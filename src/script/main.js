@@ -28,7 +28,7 @@ async function pesquisaLivro() {
             livro += "<h4 class='livro__autor'>" + autor + "</h4>"
             livro += "<img class='livro__imagem' src=" + imagem + ">"
             livro += "<a href='" + url + "'><button class='livro__saiba-mais'>Saiba Mais</button></a>"
-            livro += "<button class='btn-favoritar' id='btn-favoritar' onclick='favoritarLivro()'>Favoritar</button></div>"
+            livro += "<button class='btn-favoritar' id='btn-favoritar' onclick='favoritarLivro(this)'>Favoritar</button></div>"
 
             livros.push(livro)
 

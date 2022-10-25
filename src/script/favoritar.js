@@ -1,13 +1,9 @@
-let bibliotecaFavoritos = []
+let bibliotecaFavoritos = JSON.parse(localStorage.getItem("favoritos")) || []; // aqui, dá para fazer um map, forEach, forOf ETC
 
-
-function favoritarLivro() {
-    for (i = 0; i < livros.length; i++) {
-        console.log(livros[i])
-    }
-    // const livroFavorito = document.querySelectorAll(".livro__resultado div")
-    // console.log(livroFavorito)
+const favoritarLivro= (btn) => {
+    bibliotecaFavoritos.push(btn.parentNode.innerHTML)
+    
+    localStorage.setItem("favoritos", JSON.stringify(bibliotecaFavoritos))
 }
-
 
 // localStorage.setItem("biblioteca", livros[livro])
