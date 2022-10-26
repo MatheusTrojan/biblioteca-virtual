@@ -1,6 +1,6 @@
 let bibliotecaFavoritos = JSON.parse(localStorage.getItem("favoritos")) || []; // aqui, dá para fazer um map, forEach, forOf ETC
 
-const favoritarLivro= (btn) => {
+const favoritarLivro = (btn) => {
     bibliotecaFavoritos.push(btn.parentNode.innerHTML)
     
     //const index = bibliotecaFavoritos.indexOf()
