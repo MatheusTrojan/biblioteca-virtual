@@ -23,7 +23,8 @@ async function pesquisaLivro() {
             autor = resultadoBusca.items[i].volumeInfo.authors
             imagem = resultadoBusca.items[i].volumeInfo.imageLinks.thumbnail
             url = resultadoBusca.items[i].volumeInfo.infoLink
-
+            
+            livro+="<div class='card'"+"/div>"
             livro += "<div class='livro__card'><h3 class='livro__titulo'>" + titulo + "</h3>"
             livro += "<h4 class='livro__autor'>" + autor + "</h4>"
             livro += "<img class='livro__imagem' src=" + imagem + ">"
