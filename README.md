@@ -7,7 +7,6 @@
 - [Resumo](#resumo)
   - [O Desafio](#o-desafio)
   - [Screenshot](#screenshot)
-  - [Preview](#preview)
   - [Links](#links)
 - [Meu processo](#meu-processo)
   - [Projetado com](#projetado-com)
@@ -31,11 +30,7 @@ O usuário deverá conseguir:
 
 ### Screenshot
 
-<p>~~ em breve</p>
-
-### Preview
-
-<p>~~ em breve</p>
+<img src="src/images/print.png"/>
 
 ### Links
 
