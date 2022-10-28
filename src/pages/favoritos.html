@@ -5,23 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus favoritos</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+    </script>
+
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/styles.css">
+
 </head>
 <body>
-    <header class="cabecalho">
-        <h1 class="cabecalho__titulo">MEUS FAVORITOS</h1>
-        <a href="index.html">
-            <button>home</button>
-        </a>
-    </header>
-    <main>
-        <div class="favoritos livro__resultado" id="bibliotecaFavoritos"></div>
-    </main>
-    
+    <div class="container__geral">
+        <header class="cabecalho">
+            <h1 class="cabecalho__titulo">MEUS FAVORITOS</h1>
+            <a href="index.html" class="cabecalho__botao">
+                <button class="btn-cabecalho">Home</button>
+            </a>
+        </header>
+        <main>
+            <div class="favoritos livro__resultado" id="bibliotecaFavoritos"></div>
+        </main>
+    </div>
 
-    <footer class="rodape">
-        
+    <footer class="rodape__container">
+        <div class="rodape">
+            <p class="rodape__texto">Código de André Luiz Silva Azevêdo</p>
+            <a href="https://github.com/andreazevedoluiz" class="rodape__imagem">
+                <img src="../images/github.svg" alt="Acesse meu Github">
+            </a>
+            <a href="https://www.linkedin.com/in/andreazevedoluiz/" class="rodape__imagem">
+                <img src="../images/linkedin.svg" alt="Acesse meu LinkedIn">
+            </a>
+        </div>
+        <div class="rodape">
+            <p class="rodape__texto">E Matheus Trojan</p>
+            <a href="https://github.com/MatheusTrojan" class="rodape__imagem">
+                <img src="../images/github.svg" alt="Acesse meu Github">
+            </a>
+            <a href="https://www.linkedin.com/in/matheus-trojan/" class="rodape__imagem">
+                <img src="../images/linkedin.svg" alt="Acesse meu LinkedIn">
+            </a>
+        </div>
     </footer>
 
     <script src="../script/main.js"></script>

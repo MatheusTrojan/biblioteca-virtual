@@ -24,13 +24,12 @@ async function pesquisaLivro() {
             imagem = resultadoBusca.items[i].volumeInfo.imageLinks.thumbnail
             url = resultadoBusca.items[i].volumeInfo.infoLink
             
-            livro+="<div class='card'"+"/div>"
-            livro += "<div class='livro__card'><h3 class='livro__titulo'>" + titulo + "</h3>"
-            livro += "<h4 class='livro__autor'>" + autor + "</h4>"
+            livro += "<div class='card'>"
             livro += "<img class='livro__imagem' src=" + imagem + ">"
-            livro += "<a href='" + url + "'><button class='livro__saiba-mais'>Saiba Mais</button></a>"
-            livro += "<button class='btn-favoritar' id='btn-favoritar' onclick='favoritarLivro(this)'>Favoritar</button></div>"
-            // livro += "<input type='checkbox' class='btn-favoritar' id='btn-favoritar' onchange='favoritarLivro(this)'> Favorito</input></div>"
+            livro += "<div class='livro__infos'><h3 class='livro__titulo'>" + titulo + "</h3>"
+            livro += "<h4 class='livro__autor'>" + autor + "</h4>"            
+            livro += "<div class='livro__botoes'><a href='" + url + "'><button class='livro__botao'>Saiba Mais</button></a>"
+            livro += "<button class='btn-favoritar livro__botao' id='btn-favoritar' onclick='favoritarLivro(this)'>Favoritar</button></div></div>"
            
             livros.push(livro)
         }

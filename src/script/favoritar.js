@@ -1,22 +1,31 @@
+function alerta(mensagem){
+    swal(mensagem, "","success", {
+      button: "Encerrar",      
+    });
+  }
+
 let bibliotecaFavoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
 
 const favoritarLivro = (btn) => {
 
-    const livroAlvo = btn.parentNode.innerHTML
+    const livroAlvo = btn.parentNode.parentNode.parentNode.innerHTML
 
-    // console.log(livroAlvo)
+    console.log(livroAlvo)
 
-    const index = bibliotecaFavoritos.indexOf("<div class='livro__card'>" + livroAlvo + "</div>")
+    const index = bibliotecaFavoritos.indexOf("<div class='card'>" + livroAlvo + "</div>")
     const existeNoLocalStorage = index != -1
 
     if (existeNoLocalStorage) {
         bibliotecaFavoritos.splice(index, 1);
+        alerta("Livro removido dos seus favoritos!")
 
     } else {
-        bibliotecaFavoritos.push("<div class='livro__card'>" + livroAlvo + "</div>")
+        bibliotecaFavoritos.push("<div class='card'>" + livroAlvo + "</div>")
+        alerta("Livro adicionado aos seus favoritos!")
     }
 
     localStorage.setItem("favoritos", JSON.stringify(bibliotecaFavoritos))
+
 
 }
 

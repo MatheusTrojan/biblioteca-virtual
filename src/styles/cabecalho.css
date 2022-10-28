@@ -24,8 +24,8 @@
     background: var(--cor-principal);
     border: none;
     color: var(--branco);
-    padding: 0.25rem .5rem;    
     cursor: pointer;
+    padding: 0.25rem .5rem;    
     transition: 0.3s ease-in-out;
 }
 
