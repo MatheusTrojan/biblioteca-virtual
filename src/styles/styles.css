@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 @import url("../styles/cabecalho.css");
 @import url("../styles/formulario.css");
 @import url("../styles/livros.css");
+@import url("../styles/rodape.css");
 
-.invisivel {
-    display: none;
+:root {
+    --fonte-principal: 'Montserrat';
+    
+    --branco: hsl(0, 0%, 100%);
+    --preto: black;
+    
+    --cor-principal: #203D92;
+    --cor-secundaria: #4368D6;
+    --cor-terciaria: #6D89DF;
+}
+
+body {
+    font-family: var(--fonte-principal);
+}
+
+.container__geral {
+    height: calc(100vh - 100px);
 }

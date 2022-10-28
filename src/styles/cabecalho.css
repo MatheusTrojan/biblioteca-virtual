@@ -1,13 +1,35 @@
 .cabecalho {
     align-items: center;
-    display: flex;
+    background-color: var(--cor-secundaria);
+    display: grid;
     height: 100px;
-    justify-content: center;
-   
+    grid-template-columns: repeat(10, 1fr);
+    text-align: center;
+    width: 100%;
 }
 
-
-
 .cabecalho__titulo {
+    color: var(--branco);
     font-size: 2em;
+    grid-column: 5/7;
+}
+
+.cabecalho__botao {
+
+    justify-items: flex-end;
+    grid-column: 9/10;
+}
+
+.btn-cabecalho {
+    background: var(--cor-principal);
+    border: none;
+    color: var(--branco);
+    padding: 0.25rem .5rem;    
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-cabecalho:hover {
+    background: var(--cor-terciaria);
+    scale: 1.12;
 }

@@ -1,0 +1,28 @@
+.rodape__container {
+    align-items: center;
+    background: var(--cor-secundaria);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: center;
+    height: 100px;
+}
+
+.rodape {
+    align-items: center;
+    background: var(--cor-fundo3);
+    display: flex;
+    grid-column: 5/7;
+    justify-content: center;
+    margin: .25rem;
+}
+
+.rodape__texto {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 0.9rem;
+}
+
+.rodape__imagem {
+    margin-left: 0.75rem;
+    width: 2rem;
+}
