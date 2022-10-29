@@ -11,7 +11,7 @@
 - [Meu processo](#meu-processo)
   - [Projetado com](#projetado-com)
   - [O que eu aprendi](#o-que-eu-aprendi)
-- [Autor](#autor)
+- [Autores](#autores)
 
 ## Resumo
 
@@ -34,7 +34,7 @@ O usuário deverá conseguir:
 
 ### Links
 
-<p>~~ em breve</p>
+[Deploy](https://biblioteca-virtual-two.vercel.app/)
 
 ## Processo de Criação
 
