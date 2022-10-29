@@ -15,7 +15,6 @@
 }
 
 .cabecalho__botao {
-
     justify-items: flex-end;
     grid-column: 9/10;
 }

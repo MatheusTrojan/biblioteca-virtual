@@ -4,6 +4,9 @@ let buscarLivro = document.getElementById("btn-pesquisar")
 buscarLivro.addEventListener("click", pesquisaLivro)
 
 async function pesquisaLivro() {
+    let elementoListaLivros = document.getElementById("resultadoFinal")
+    elementoListaLivros.innerHTML = ""
+    livros = []
     const nomeLivro = document.getElementById("nome-livro")
     if (nomeLivro.value == "") {
         alert("Por favor preencha o campo de busca")
@@ -21,7 +24,11 @@ async function pesquisaLivro() {
             let livro = "";
             titulo = resultadoBusca.items[i].volumeInfo.title
             autor = resultadoBusca.items[i].volumeInfo.authors
-            imagem = resultadoBusca.items[i].volumeInfo.imageLinks.thumbnail
+            if (resultadoBusca.items[i].volumeInfo.imageLinks != undefined){
+                imagem = resultadoBusca.items[i].volumeInfo.imageLinks.thumbnail
+            } else {
+                imagem = "https://telhafer.com.br/image/no_image.jpg"
+            }
             url = resultadoBusca.items[i].volumeInfo.infoLink
             
             livro += "<div class='card'>"
