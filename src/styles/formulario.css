@@ -27,6 +27,17 @@
 
 .btn-pesquisar {
     margin-bottom: 3rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
 
+@media screen and (max-width:1440px) {    
+    .formulario__pesquisa {
+        margin: 0 30%;
+    }
+}
+
+@media screen and (max-width:640px) {    
+    .formulario__pesquisa {
+        margin: 0 10%;
+    }
 }

@@ -11,13 +11,13 @@
     align-items: center;
     background: var(--cor-fundo3);
     display: flex;
-    grid-column: 5/7;
+    grid-column: 1/11;
     justify-content: center;
     margin: .25rem;
 }
 
 .rodape__texto {
-    color: var(--cor-primaria);
+    color: var(--branco);
     font-family: var(--fonte-principal);
     font-size: 0.9rem;
 }
@@ -25,4 +25,11 @@
 .rodape__imagem {
     margin-left: 0.75rem;
     width: 2rem;
+}
+
+@media screen and (max-width:940px) {
+    .rodape__imagem {
+        margin-left: 0.75rem;
+        width: 1.25rem;
+    }
 }
