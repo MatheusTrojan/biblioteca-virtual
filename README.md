@@ -30,7 +30,7 @@ O usuário deverá conseguir:
 
 ### Screenshot
 
-<img src="src/images/print.png"/>
+![](src/images/print.png#vitrinedev)
 
 ### Links
 
